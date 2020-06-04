@@ -1,0 +1,117 @@
+body {font-family: Arial, Helvetica, sans-serif,   background-image:"img3.jpg";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .sem1,.sem2, .sem3,.sem4{
+  display: inline-block;
+  color: white;
+  
+  text-align: center;
+  font-size: 22px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .sem1 .sem2 .sem3 .sem4{
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  font-size:15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  li a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.welcome
+{
+  margin-top: 3px;
+  position: relative;
+}
+.img{
+  position: absolute;
+  float :left;
+  top: 8%;
+  left: 5%;
+}
+.wel{
+  position: absolute;
+  top:15%;
+  left:35%;
+  color: blue;
+  font-size: 60px;
+  text-align: center;
+}
+
+.backimg
+{
+  top:120px;
+  position: relative; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}
+.centered {
+  color: white;
+  font-size: 50px;
+  font-family:Montaga; 
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-shadow: 3px 3px 7px  darkgray;
+  animation: mymove 4s infinite;
+  animation-timing-function: ease;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {left: 20%;font-weight: bolder;}
+  to {left: 50%; font-weight: bolder;}
+  0%   {color: red;}
+  25%  {color: red;}
+  50%  {color: #53ff1a;}
+  70%  {color: #ff1a8c;}
+  85%  {color: #1a1aff;}
+  
+  100% {color: white;}
+}

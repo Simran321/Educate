@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title>FINANCIAL ACCOUNTING</title>
+	<link rel="stylesheet" href="sem1css.css">
+</head>
+<body>
+	<div class="topnav" id=mysem1>
+  	<a class="home" href="mba.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  	<a href="sem1OB.html">Organizational Behaviour</a>
+  	<a href="#">Marketing Management</a>
+  	<a href="#">Quantitative Methods</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+	</div>
+	<script>
+function myFunction() {
+  var x = document.getElementById("mysem1");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	<div class="welcome">
+      <div class="img">
+      <img src="logo2.png" alt="logo" height="50%" width= "50%">
+      </div>
+	
+      <h1 class="wel">Financial Accounting </h1>
+      
+  </div>
+	
+	<div class="grid-container">
+      	<div class="grid-item">
+            <img src="book.jpg" alt="Avatar" class="image" style="width: 50%">
+            <button class="btn book" onclick="window.open('bookFA.html');">Books</button>
+      	</div>
+		<div class="grid-item">
+      		 <img src="note.jpg" alt="Avatar" class="image" style="width:50%">
+      		<button class="btn note" onclick="window.open('notesFA.html');">Notes</button>
+         </div>
+		<div class="grid-item">
+      		<img src="paper.png" alt="Avatar" class="image" style="width:50%">
+      		<button class="btn paper" onclick="window.open('http://web.du.ac.in/PreviousQuestionPapers/UNDER%20GRADUATE/B.COM/B%20COM%20COURSE%20PART%20I%20FINANCIAL%20ACCOUNTING%20%20.pdf');">Questions Paper</button>
+      </div>  
+       
+  	</div>
+
+</body>
+</html>

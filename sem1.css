@@ -1,0 +1,271 @@
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#d
+{
+    top:0;
+    margin:0;
+    padding:0;
+   
+    height:150px;
+    
+    background-color:black;
+   
+}
+#i{
+    height:100px;
+    width:100px;
+   
+    padding-top:0px;
+    padding-left:0px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  margin-left:0px;
+  top:0;
+  margin-top:0px;
+  position:fixed;
+  padding-right:30px;
+  width:80%;
+  padding-left:40px;
+  margin-left:100px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-decoration: none;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-style: normal;
+          font-size:25px;
+}
+
+.topnav a:hover {
+    background-color: rgba(90, 85, 85, 0.527);
+    color: rosybrown;
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .d 
+  {
+    display:block;
+    float:none;
+    height:90px;
+  }
+ #i
+ {
+   height:40px;
+   width:40px;
+ }
+   .topnav  {
+    
+    float: none;
+    display:block;
+    margin-top:40px;
+    
+
+  }
+
+  
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin:0px;
+     font-size:18px;
+    padding: 10px;
+  }
+  
+  
+}
+
+
+.welcome
+{
+ 
+ 
+  -webkit-background-size:cover;
+  background-repeat: no-repeat;
+   background-size: cover; 
+ background-position:center;
+  filter: blur(8px);
+   -webkit-filter: blur(8px);
+  height:500px;
+   
+}
+
+.head
+{
+  color:white;
+  background-color: rgb(0,0,0); 
+   background-color: rgba(0,0,0, 0.4); 
+   font-size: 100px;
+   font-family:Montaga; 
+   position: absolute;
+   margin-top:30px;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   opacity: inherit;
+   border: 3px solid #f1f1f1;
+   transform: translate(-50%, -50%);
+   z-index:2;
+   font-weight:bold;
+   text-shadow:2px 3px 3px black;
+   animation: mymove 4s infinite;
+  height:350px;
+  animation-timing-function: ease;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: #74A17A;}
+  70%  {color: #1F0101;}
+      85%  {color: #1a1aff;}
+    
+    100% {color: white;}
+  }
+
+@media screen and (max-width: 600px) {
+  .d 
+  {
+    display:block;
+    float:none;
+    height:90px;
+  }
+ #i
+ {
+   height:40px;
+   width:40px;
+ }
+   .topnav  {
+    
+    float: none;
+    display:block;
+    margin-top:40px;
+    
+
+  }
+
+  
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin:0px;
+     font-size:18px;
+    padding: 10px;
+  }
+  .test, .test .welcome {
+    display:block;
+    padding-top:20px;
+    margin-top:20px;
+  
+  }
+  .head
+  {
+    font-size:50px;
+  }
+  
+}
+
+.grid-container {
+    height: 700px;
+    margin-top:0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    background-color:rgb(202,229,233);
+    padding: 10px;
+    grid-column-gap:10px;
+    width:100%;
+  }
+  
+  .grid-container > div {
+    
+    text-align: center;
+    padding: 25px 0;
+    
+
+  }
+  
+  @media only screen and (max-width: 500px) {
+   .item1 { grid-area: 1 / 2 / span 1 / 1; }
+    .item2 { grid-area: 2 / 2 / span 2 / 3; }
+    .item3 { grid-area: 3 / 2 / span 3 / 1; }
+    
+  }
+  
+  
+  .grid-item .image {
+    opacity: 1;
+    margin-top:70px;
+    display: block;
+    width: 200px;
+    border: 1px solid black;
+    height: 380px;
+    width:200px;
+    text-align: left;
+    backface-visibility: hidden;
+
+  }
+  .btn {
+    border: 2px solid black;
+    background-color:#7B7C80;
+    margin-top:10px;
+    padding: 14px 18px;
+    font-size: 20px;
+     position:relative;
+     border-radius:10px;
+     text-shadow: white;
+     
+    cursor: pointer;
+    display: inline-block;
+  }
+  .book{
+    color: black;
+   
+  }
+  .book:hover{
+    background-color: #4CAF50;
+    color:#051E0F;
+    font-size: 25px;
+  }
+  .note{
+    color: black;
+  }
+  .note:hover{
+    background-color: #4CAF50;
+    color: #051E0F;
+    font-size: 25px;
+  }
+  .question{
+    color: black;
+  }
+  .question:hover{
+    background-color: #4CAF50;
+    color: #051E0F;
+    font-size:25px;
+  }

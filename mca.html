@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.welcome
+{
+  margin-top: 3px;
+  position: relative;
+}
+.img{
+  position: absolute;
+  float :left;
+  top: 8%;
+  left: 5%;
+}
+.wel{
+  position: absolute;
+  top:15%;
+  left:35%;
+  color: blue;
+  font-size: 60px;
+  text-align: center;
+}
+
+.backimg
+{
+  top:120px;
+  position: relative; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}
+.centered {
+  color: white;
+  font-size: 50px;
+  font-family:Montaga; 
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-shadow: 3px 3px 7px  darkgray;
+  animation: mymove 4s infinite;
+  animation-timing-function: ease;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {left: 20%;font-weight: bolder;}
+  to {left: 50%; font-weight: bolder;}
+  0%   {color: red;}
+  25%  {color: red;}
+  50%  {color: #53ff1a;}
+  70%  {color: #ff1a8c;}
+  85%  {color: #1a1aff;}
+  
+  100% {color: white;}
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+ <a href="courses.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Semester-1
+    
+    </button>
+    <div class="dropdown-content">
+      <a href="mcasem1.html">Computer Architecture</a>
+   	 <a href="c.html">C Prgramming</a>
+      <a href="#">Business Communication</a>
+      <a href="#">Discrete Mathematics</a>
+    </div>
+  </div> 
+ <div class="dropdown">
+    <button class="dropbtn">Semester-2 
+   
+    </button>
+    <div class="dropdown-content">
+  <a href="#">Data Structure</a>
+      <a href="#">Operating System</a>
+      <a href="#">OOP</a>
+      <a href="#">DBMS</a>
+    </div>
+  </div> 
+ <div class="dropdown">
+    <button class="dropbtn">Semester-3
+    </button>
+    <div class="dropdown-content">
+     <a href="#">Java Programming</a>
+      <a href="#">Algorithm</a>
+      <a href="#">Automata Theory</a>
+      <a href="#">Software Engineering</a>
+    </div>
+  </div> 
+ <div class="dropdown">
+    <button class="dropbtn">Semester-4
+
+    </button>
+    <div class="dropdown-content">
+    <a href="#">Advance Java</a>
+      <a href="#">Front End Design</a>
+      <a href="#">Networking</a>
+      <a href="#">Copiler Design</a>
+    </div>
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn">Semester-5
+
+    </button>
+    <div class="dropdown-content">
+     <a href="#">System Programming</a>
+      <a href="#">Computer Graphics</a>
+      <a href="#">System Simulation</a>
+      <a href="#">Optimization Techniques</a>
+    </div>
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn">Semester-6
+
+    </button>
+    <div class="dropdown-content">
+   <a href="#">IOT</a>
+      <a href="#">Mobile Computing</a>
+      <a href="#">Multimedia and Animation</a>
+      <a href="#">AI</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="welcome">
+      <div class="img">
+      <img src="logo2.png" alt="logo" height="50%" width= "50%">
+      </div>
+      <h1 class="wel"> MCA COURSE</h1>
+      
+  </div>
+    <div class="backimg">
+       <img src="mca2.jpg" alt="backdrop" height="500px" width= "100%">
+
+       <div class="centered">Welcome Students</div>
+   </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  
+</body>
+</html>

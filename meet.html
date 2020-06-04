@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montaga">
+</head>
+<style>
+   .extra1
+{
+  width: 100%;
+  height: 300px;
+ 
+
+}
+
+ @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+.sign {
+  font-family: Montaga;
+  background-color: black;
+ 
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 15%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.row2{
+  margin-left: 40px;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column2 {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 850px) {
+  .column2 {
+    width: 100%;
+    display: block;
+  }
+}
+.row2
+{
+
+}
+@media screen and (max-width: 650px) {
+  .column2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card2{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+   padding: 0 16px;
+
+}
+
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title2 {
+  color: grey;
+}
+
+.button2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button2:hover {
+  background-color: #555;
+}
+.extra h6
+{
+  
+ margin-top: -110px;
+  margin-bottom: 0px;
+  margin-left: -5px;
+  width: 100%;
+  color:black;
+  padding: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: grey;
+  
+}
+.extra h6:hover
+{ 
+  color: white;
+  font-size: 300%;
+  background-color: black;
+
+}
+.imaget:hover
+{
+opacity: 0.9;
+}
+.refren
+{
+  width: 98%;
+  margin-top:600px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Montaga;
+
+}
+.refren a
+{
+  text-decoration: none;
+  color:black;
+}
+
+</style>
+<body>
+
+
+<div class="extra1">
+    <div class="sign">
+      <span class="fast-flicker">E</span>du<span class="flicker">c</span>om
+    </div>
+  </div>
+
+<div class="extra"><h6 class="mem">Our Team Members</h6>
+</div>
+<div class="row2" id="meet">
+  <div class="column2">
+    <div class="card2">
+      <img src="nihu.png" alt="niharika" class="imaget" style="width:100%" height="330px">
+      <div class="container2">
+        <h2>Niharika Raj</h2>
+        <p class="title2">Co-Developer</p>
+        <p>She is a beauty with brain and sleepy head :-P and currently studing in BIT Mesra.</p>
+        <p>niharika5197raj@gmail.com</p>
+        <p><button class="button2">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card2">
+      <img src="sneha.png" alt="Sneha" class="imaget" style="width:100%" height="330px">
+      <div class="container2">
+        <h2>Sneha</h2>
+        <p class="title2">Co-Developer</p>
+        <p>She is a beautiful girl having childish cute behaviour and intelligent and currently studing in BIT Mesra.</p>
+        <p>palak9122@gmail.com</p>
+        <p><button class="button2">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="card2">
+      <img src="simii.jpg" alt="Simran " class="imaget" style="width:100%" height="330px">
+      <div class="container2">
+        <h2>Simran Agarwal</h2>
+        <p class="title2">Co-Developer</p>
+        <p>She is a beautiful girl with a beautiful smile and smart brain and currently studing in BIT Mesra.</p>
+        <p>agarwalsimran246@gmail.com</p>
+        <p><button class="button2">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column2">
+    <div class="card2">
+      <img src="puja.png" alt="Puja" class="imaget" style="width:100%"  height="330px">
+      <div class="container2">
+        <h2>Puja</h2>
+        <p class="title2">Co-Developer</p>
+        <p>She is a beautiful girl and crazy as hell and funny and currently studing in BIT Mesra.</p>
+        <p>pujameghakumari123@com</p>
+        <p><button class="button2">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="refren">
+  <a href="Educom.html">Back to Home >>></a>
+  <br>
+  <a href="gallary.html">Back to gallary >>></a>
+  </div>
+</body>
+</html>
